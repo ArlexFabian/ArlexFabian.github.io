@@ -1,0 +1,803 @@
+/***********************************************************************************
+	Style Sheet for CSS3 Awesome Menu
+	Created by Mahesh Wickramasinghe
+	maheshwicks89@gmail.com
+
+***********************************************************************************/
+
+ /************ CSS Reset *****************/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+
+
+
+
+/*********************************** Main Styles ********************************************/
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+*,
+*:after,
+*::before {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+}
+
+
+body {
+	width: 100% !important;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	width: 100%;
+	height: 100%;
+}
+
+header.css3aw-navigation-container {
+	position: absolute;
+	z-index: 9999;
+	height: 48px;
+	width: 100%;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24);
+}
+
+header.css3aw-navigation-container.fixed-on-top {position: fixed !important;}
+
+div.css3aw-menu-container {
+	height: 48px;
+	z-index: 1;
+	width: 48px;
+	display: block;
+	float: left;
+	padding: 0;
+	cursor: pointer;
+}
+
+input[id="css3aw-menu-icon"] + label > span.css3aw-menu-dash {
+	display: block;
+	height: 3px;
+	cursor: pointer;
+	margin: 3px auto;
+	clear: both;
+	width: 22px;
+}
+
+input[id="css3aw-menu-icon"] + label > span.css3aw-menu-dash:first-child {margin-top: 18px;}
+
+input[type=checkbox] {
+	display: none;
+}
+
+input[type=checkbox] + label {
+	width: 48px;
+	cursor: pointer;
+	display: block;
+}
+
+
+ul.css3aw-sub-menu {
+	position: relative;
+	margin-top: 14px;
+	width: 0;
+    z-index: 100;
+}
+
+ul.css3aw-sub-menu > li {
+	position: relative;
+	line-height: 48px;
+	padding-left: 12px;
+	white-space: nowrap;
+	overflow: hidden;
+	margin-left: -48px;
+	width: 48px;
+	-webkit-transition: margin-left .25s ease-out, width .25s ease-out;
+	-moz-transition: margin-left .25s ease-out, width .25s ease-out;
+	-o-transition: margin-left .25s ease-out, width .25s ease-out;
+	-ms-transition: margin-left .25s ease-out, width .25s ease-out;
+	transition: margin-left .25s ease-out, width .25s ease-out;
+}
+
+ul.css3aw-sub-menu > li ul {
+	margin-left: -12px;
+}
+
+ul.css3aw-sub-menu > li ul li {
+	width: 250px;
+	height: 0;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: transparent;
+	padding-left: 30px;
+	-webkit-transition: height .25s ease-in-out, border-top-color 0.25s ease-in-out;
+	-moz-transition: height .25s ease-in-out, border-top-color 0.25s ease-in-out;
+	-o-transition: height .25s ease-in-out, border-top-color 0.25s ease-in-out;
+	-ms-transition: height .25s ease-in-out, border-top-color 0.25s ease-in-out;
+	transition: height .25s ease-in-out, border-top-color 0.25s ease-in-out;
+}
+
+ul.css3aw-sub-menu li:first-child {-webkit-transition-delay: 0.05s; transition-delay: 0.05s;}
+ul.css3aw-sub-menu li:nth-child(2) {-webkit-transition-delay: 0.1s; transition-delay: 0.1s;}
+ul.css3aw-sub-menu li:nth-child(3) {-webkit-transition-delay: 0.15s; transition-delay: 0.15s;}
+ul.css3aw-sub-menu li:nth-child(4) {-webkit-transition-delay: 0.2s; transition-delay: 0.2s;}
+ul.css3aw-sub-menu li:nth-child(5) {-webkit-transition-delay: 0.25s; transition-delay: 0.25s;}
+ul.css3aw-sub-menu li:nth-child(6) {-webkit-transition-delay: 0.3s; transition-delay: 0.3s;}
+ul.css3aw-sub-menu li:nth-child(7) {-webkit-transition-delay: 0.35s; transition-delay: 0.35s;}
+ul.css3aw-sub-menu li:nth-child(8) {-webkit-transition-delay: 0.4s; transition-delay: 0.4s;}
+ul.css3aw-sub-menu li:nth-child(9) {-webkit-transition-delay: 0.45s; transition-delay: 0.45s;}
+ul.css3aw-sub-menu li:nth-child(10) {-webkit-transition-delay: 0.5s; transition-delay: 0.5s;}
+ul.css3aw-sub-menu li:nth-child(11) {-webkit-transition-delay: 0.55s; transition-delay: 0.55s;}
+ul.css3aw-sub-menu li:nth-child(12) {-webkit-transition-delay: 0.6s; transition-delay: 0.6s;}
+ul.css3aw-sub-menu li:nth-child(13) {-webkit-transition-delay: 0.65s; transition-delay: 0.65s;}
+ul.css3aw-sub-menu li:nth-child(14) {-webkit-transition-delay: 0.7s; transition-delay: 0.7s;}
+ul.css3aw-sub-menu li:nth-child(15) {-webkit-transition-delay: 0.75s; transition-delay: 0.75s;}
+ul.css3aw-sub-menu li:nth-child(16) {-webkit-transition-delay: 0.8s; transition-delay: 0.8s;}
+ul.css3aw-sub-menu li:nth-child(17) {-webkit-transition-delay: 0.85s; transition-delay: 0.85s;}
+ul.css3aw-sub-menu li:nth-child(18) {-webkit-transition-delay: 0.9s; transition-delay: 0.9s;}
+ul.css3aw-sub-menu li:nth-child(19) {-webkit-transition-delay: 0.95s; transition-delay: 0.95s;}
+ul.css3aw-sub-menu li:nth-child(20) {-webkit-transition-delay: 1.0s; transition-delay: 1.0s;}
+ul.css3aw-sub-menu li:nth-child(21) {-webkit-transition-delay: 1.05s; transition-delay: 1.05s;}
+ul.css3aw-sub-menu li:nth-child(22) {-webkit-transition-delay: 1.1s; transition-delay: 1.1s;}
+ul.css3aw-sub-menu li:nth-child(23) {-webkit-transition-delay: 1.15s; transition-delay: 1.15s;}
+ul.css3aw-sub-menu li:nth-child(24) {-webkit-transition-delay: 1.2s; transition-delay: 1.2s;}
+ul.css3aw-sub-menu li:nth-child(25) {-webkit-transition-delay: 1.25s; transition-delay: 1.25s;}
+ul.css3aw-sub-menu li:nth-child(26) {-webkit-transition-delay: 1.3s; transition-delay: 1.3s;}
+ul.css3aw-sub-menu li:nth-child(27) {-webkit-transition-delay: 1.35s; transition-delay: 1.35s;}
+ul.css3aw-sub-menu li:nth-child(28) {-webkit-transition-delay: 1.4s; transition-delay: 1.4s;}
+ul.css3aw-sub-menu li:nth-child(29) {-webkit-transition-delay: 1.45s; transition-delay: 1.45s;}
+ul.css3aw-sub-menu li:nth-child(30) {-webkit-transition-delay: 1.5s; transition-delay: 1.5s;}
+ul.css3aw-sub-menu li:nth-child(31) {-webkit-transition-delay: 1.55s; transition-delay: 1.55s;}
+ul.css3aw-sub-menu li:nth-child(32) {-webkit-transition-delay: 1.6s; transition-delay: 1.6s;}
+ul.css3aw-sub-menu li:nth-child(33) {-webkit-transition-delay: 1.65s; transition-delay: 1.65s;}
+ul.css3aw-sub-menu li:nth-child(34) {-webkit-transition-delay: 1.7s; transition-delay: 1.7s;}
+ul.css3aw-sub-menu li:nth-child(35) {-webkit-transition-delay: 1.75s; transition-delay: 1.75s;}
+ul.css3aw-sub-menu li:nth-child(36) {-webkit-transition-delay: 1.8s; transition-delay: 1.8s;}
+ul.css3aw-sub-menu li:nth-child(37) {-webkit-transition-delay: 1.85s; transition-delay: 1.85s;}
+ul.css3aw-sub-menu li:nth-child(38) {-webkit-transition-delay: 1.9s; transition-delay: 1.9s;}
+ul.css3aw-sub-menu li:nth-child(39) {-webkit-transition-delay: 1.95s; transition-delay: 1.95s;}
+ul.css3aw-sub-menu li:nth-child(40) {-webkit-transition-delay: 2.0s; transition-delay: 2.0s;}
+
+input#css3aw-menu-icon:checked ~ ul > li {
+	margin-left: 0;
+	width: 250px;
+}
+
+input#css3aw-menu-icon:checked ~ ul > li li {
+	height: 48px;
+}
+
+
+
+input#css3aw-menu-icon:checked ~ ul > li:first-child li {transition-delay: 0.3s; -webkit-transirion-delay: 0.3s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(2) li {transition-delay: 0.35s; -webkit-transirion-delay: 0.35s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(3) li {transition-delay: 0.4s; -webkit-transirion-delay: 0.4s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(4) li {transition-delay: 0.45s; -webkit-transirion-delay: 0.45s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(5) li {transition-delay: 0.5s; -webkit-transirion-delay: 0.5s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(6) li {transition-delay: 0.55s; -webkit-transirion-delay: 0.55s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(7) li {transition-delay: 0.6s; -webkit-transirion-delay: 0.6s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(8) li {transition-delay: 0.65s; -webkit-transirion-delay: 0.65s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(9) li {transition-delay: 0.7s; -webkit-transirion-delay: 0.7s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(10) li {transition-delay: 0.75s; -webkit-transirion-delay: 0.75s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(11) li {transition-delay: 0.8s; -webkit-transirion-delay: 0.8s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(12) li {transition-delay: 0.85s; -webkit-transirion-delay: 0.85s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(13) li {transition-delay: 0.9s; -webkit-transirion-delay: 0.9s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(14) li {transition-delay: 0.95s; -webkit-transirion-delay: 0.95s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(15) li {transition-delay: 1s; -webkit-transirion-delay: 1s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(16) li {transition-delay: 1.05s; -webkit-transirion-delay: 1.05s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(17) li {transition-delay: 1.1s; -webkit-transirion-delay: 1.10s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(18) li {transition-delay: 1.15s; -webkit-transirion-delay: 1.15s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(19) li {transition-delay: 1.2s; -webkit-transirion-delay: 1.2s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(20) li {transition-delay: 1.25s; -webkit-transirion-delay: 1.25s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(21) li {transition-delay: 1.3s; -webkit-transirion-delay: 1.3s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(22) li {transition-delay: 1.35s; -webkit-transirion-delay: 1.35s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(23) li {transition-delay: 1.4s; -webkit-transirion-delay: 1.4s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(24) li {transition-delay: 1.45s; -webkit-transirion-delay: 1.45s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(25) li {transition-delay: 1.5s; -webkit-transirion-delay: 1.5s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(26) li {transition-delay: 1.55s; -webkit-transirion-delay: 155s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(27) li {transition-delay: 1.6s; -webkit-transirion-delay: 1.6s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(28) li {transition-delay: 1.65s; -webkit-transirion-delay: 1.65s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(29) li {transition-delay: 1.7s; -webkit-transirion-delay: 1.7s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(30) li {transition-delay: 1.75s; -webkit-transirion-delay: 1.75s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(31) li {transition-delay: 1.8s; -webkit-transirion-delay: 1.8s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(32) li {transition-delay: 1.85s; -webkit-transirion-delay: 1.85s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(33) li {transition-delay: 1.9s; -webkit-transirion-delay: 1.9s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(34) li {transition-delay: 1.95s; -webkit-transirion-delay: 1.95s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(35) li {transition-delay: 2.0s; -webkit-transirion-delay: 2.0s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(36) li {transition-delay: 2.05s; -webkit-transirion-delay: 2.05s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(37) li {transition-delay: 2.1s; -webkit-transirion-delay: 2.1s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(38) li {transition-delay: 2.15s; -webkit-transirion-delay: 2.15s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(39) li {transition-delay: 2.2s; -webkit-transirion-delay: 2.2s;}
+input#css3aw-menu-icon:checked ~ ul > li:nth-child(40) li {transition-delay: 2.25s; -webkit-transirion-delay: 2.25s;}
+
+/*        Right Bar Styles       */
+
+div..css3aw-rightbar {
+	padding: 0;
+}
+
+.css3aw-rightbar ul {
+	width: 100%;
+}
+
+.css3aw-rightbar ul > li {
+	line-height: 48px;
+	float: left;
+	display: block;
+	padding: 0 12px;
+}
+
+.css3aw-rightbar li.css3aw-social {
+	width: 48px;
+	border: none !important;
+}
+
+.css3aw-rightbar li.css3aw-social ul {
+	margin-top: 0px;
+	width: 0;
+	overflow: visible;
+}
+
+.css3aw-rightbar li.css3aw-social ul li {
+	display: block;
+	position: relative;
+	clear: both;
+	line-height: 48px;
+	width: 47px;
+	overflow: hidden;
+	white-space: nowrap;
+	padding: 0 18px;
+	margin-left: 36px;
+	-webkit-transition: margin-left .25s ease-out;
+	-moz-transition: margin-left .25s ease-out;
+	-o-transition: margin-left .25s ease-out;
+	-ms-transition: margin-left .25s ease-out;
+	transition: margin-left .25s ease-out;
+}
+
+.css3aw-rightbar li.css3aw-social ul li:first-child {transition-delay: 0s; -webkit-transition-delay: 0s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(2) {transition-delay: 0.05s; -webkit-transition-delay: 0.05s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(3) {transition-delay: 0.1s; -webkit-transition-delay: 0.1s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(4) {transition-delay: 0.15s; -webkit-transition-delay: 0.15s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(5) {transition-delay: 0.2s; -webkit-transition-delay: 0.2s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(6) {transition-delay: 0.25s; -webkit-transition-delay: 0.25s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(7) {transition-delay: 0.3s; -webkit-transition-delay: 0.3s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(8) {transition-delay: 0.35s; -webkit-transition-delay: 0.35s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(9) {transition-delay: 0.4s; -webkit-transition-delay: 0.4s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(12) {transition-delay: 0.45s; -webkit-transition-delay: 0.45s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(13) {transition-delay: 0.5s; -webkit-transition-delay: 0.5s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(14) {transition-delay: 0.55s; -webkit-transition-delay: 0.55s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(15) {transition-delay: 0.6s; -webkit-transition-delay: 0.6s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(16) {transition-delay: 0.65s; -webkit-transition-delay: 0.65s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(17) {transition-delay: 0.7s; -webkit-transition-delay: 0.7s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(18) {transition-delay: 0.75s; -webkit-transition-delay: 0.75s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(19) {transition-delay: 0.8s; -webkit-transition-delay: 0.8s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(20) {transition-delay: 0.85s; -webkit-transition-delay: 0.85s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(21) {transition-delay: 0.9s; -webkit-transition-delay: 0.9s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(22) {transition-delay: 0.95s; -webkit-transition-delay: 0.95s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(23) {transition-delay: 1s; -webkit-transition-delay: 1s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(24) {transition-delay: 1.05s; -webkit-transition-delay: 1.05s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(25) {transition-delay: 1.1s; -webkit-transition-delay: 1.1s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(26) {transition-delay: 1.15s; -webkit-transition-delay: 1.15s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(27) {transition-delay: 1.2s; -webkit-transition-delay: 1.2s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(28) {transition-delay: 1.25s; -webkit-transition-delay: 1.25s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(29) {transition-delay: 1.3s; -webkit-transition-delay: 1.3s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(30) {transition-delay: 1.35s; -webkit-transition-delay: 1.35s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(31) {transition-delay: 1.4s; -webkit-transition-delay: 1.4s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(32) {transition-delay: 1.45s; -webkit-transition-delay: 1.45s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(33) {transition-delay: 1.5s; -webkit-transition-delay: 1.5s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(34) {transition-delay: 1.55s; -webkit-transition-delay: 1.55s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(35) {transition-delay: 1.6s; -webkit-transition-delay: 1.6s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(36) {transition-delay: 1.65s; -webkit-transition-delay: 1.65s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(37) {transition-delay: 1.7s; -webkit-transition-delay: 1.7s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(38) {transition-delay: 1.75s; -webkit-transition-delay: 1.75s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(39) {transition-delay: 1.8s; -webkit-transition-delay: 1.8s;}
+.css3aw-rightbar li.css3aw-social ul li:nth-child(40) {transition-delay: 1.85s; -webkit-transition-delay: 1.85s;}
+
+input#css3aw-social-icon:checked ~ ul li {
+	margin-left: -11px;
+}
+
+.css3aw-rightbar li.css3aw-social ul li span {
+	display: block;
+	line-height: 48px;
+	margin: 0 auto;
+}
+
+li.css3aw-searchbox {
+	line-height: 48px;
+	opacity: 0.9;
+	display: none !important;
+}
+
+li.css3aw-searchbox input[type="search"] {
+	border: none;
+	background: transparent;
+	height: 24px;
+	margin: 12px auto;
+	outline: none;
+	width: 55px;
+	display: block;
+	position: relative;
+	margin-left: 29px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: inherit;
+	color: inherit;
+	box-shadow: none;
+	border-radius: 0;
+	-webkit-appearance: none;
+	-webkit-transition: width .4s ease-in-out;
+	-moz-transition: width .4s ease-in-out;
+	-o-transition: width .4s ease-in-out;
+	-ms-transition: width .4s ease-in-out;
+	transition: width .4s ease-in-out;
+}
+
+input[type="search"]:focus {
+	border: none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+@media (min-width: 440px) {li.css3aw-searchbox {display: block !important;}}
+
+@media (min-width: 480px) {
+	li.css3aw-searchbox input[type="search"]:focus {
+		width: 100px;
+	}
+}
+
+@media (min-width: 767px) {
+
+	header.css3aw-navigation-container {
+		position:fixed;
+		height: 60px;
+		width: 100%;
+		font-size: 16px;
+		margin: 0;
+		padding: 0;
+		box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24);
+	}
+
+	div.css3aw-menu-container {
+		height: 60px;
+		z-index: 1;
+		width: 60px;
+		display: block;
+		float: left;
+		cursor: pointer;
+	}
+
+	input[id="css3aw-menu-icon"] + label > span.css3aw-menu-dash {
+		display: block;
+		height: 4px;
+		cursor: pointer;
+		margin: 4px auto;
+		clear: both;
+		width: 30px;
+	}
+
+	input[id="css3aw-menu-icon"] + label > span.css3aw-menu-dash:first-child {margin-top: 20px;}
+
+	header.css3aw-navigation-container li a:link, header.css3aw-navigation-container li a:visited {
+		text-decoration: none;
+		color: #3a3a3a;
+	}
+
+	input[type=checkbox] {
+		display: none;
+	}
+
+	input[type=checkbox] + label {
+		width: 60px;
+		height: 40px;
+		padding: 20px auto;
+		cursor: pointer;
+		display: block;
+	}
+
+
+	ul.css3aw-sub-menu {
+		position: relative;
+		width: 0;
+		margin-top: -1px;
+	}
+
+	ul.css3aw-sub-menu > li {
+		position: relative;
+		line-height: 60px;
+		padding-left: 15px;
+		white-space: nowrap;
+		overflow: hidden;
+		margin-left: -60px;
+		width: 60px;
+		-webkit-transition: margin-left .25s ease-out, width .25s ease-out;
+		-moz-transition: margin-left .25s ease-out, width .25s ease-out;
+		-o-transition: margin-left .25s ease-out, width .25s ease-out;
+		-ms-transition: margin-left .25s ease-out, width .25s ease-out;
+		transition: margin-left .25s ease-out, width .25s ease-out;
+	}
+
+	ul.css3aw-sub-menu > li ul {
+		margin-left: -15px;
+	}
+
+	ul.css3aw-sub-menu > li ul li {
+		width: 250px;
+		height: 0;
+		border-top-width: 1px;
+		border-top-style: solid;
+		border-top-color: transparent;
+		padding-left: 30px;
+		-webkit-transition: height .25s ease-in-out, border-top-color 0.25s ease-in-out;
+		-moz-transition: height .25s ease-in-out, border-top-color 0.25s ease-in-out;
+		-o-transition: height .25s ease-in-out, border-top-color 0.25s ease-in-out;
+		-ms-transition: height .25s ease-in-out, border-top-color 0.25s ease-in-out;
+		transition: height .25s ease-in-out, border-top-color 0.25s ease-in-out;
+	}
+
+	label[for="css3aw-menu-icon"]:hover ~ ul > li {
+		margin-left: 0px;
+	}
+
+	label[for="css3aw-menu-icon"] ~ ul:hover > li {
+		margin-left: 0px;
+		width: 250px;
+	}
+
+	ul.css3aw-sub-menu > li:hover ul li {
+		height: 60px;
+	}
+
+	input#css3aw-menu-icon:checked ~ ul > li li {
+		height: 60px;
+	}
+
+	/*        Right Bar Styles       */
+
+	div..css3aw-rightbar {
+		padding: 0;
+	}
+
+	.css3aw-rightbar ul {
+		width: 100%;
+	}
+
+	.css3aw-rightbar ul > li {
+	line-height: 60px;
+	float: left;
+	display: block;
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0;
+	padding-left: 15px;
+	}
+
+	.css3aw-rightbar li.css3aw-social {
+		width: auto;
+		padding: 0 5px 0 20px;
+		border: none !important;
+	}
+
+	.css3aw-rightbar li.css3aw-social > input,
+	.css3aw-rightbar li.css3aw-social > label {
+		display: none;
+	}
+
+	.css3aw-rightbar li.css3aw-social ul {
+		margin-top: 0px;
+		width: auto;
+		overflow: visible;
+	}
+
+	.css3aw-rightbar li.css3aw-social ul li {
+		position: static;
+		clear: none;
+		float: left;
+		width: 50px;
+		line-height: 60px;
+		overflow: hidden;
+		margin: 0 auto;
+		padding: 0 10px;
+	}
+
+	.css3aw-rightbar li.css3aw-social ul li span {
+		display: block;
+		line-height: 60px;
+		margin: 0 auto;
+	}
+
+	li.css3aw-searchbox {
+		line-height: 60px;
+	}
+
+	li.css3aw-searchbox input[type="search"] {
+		height: 36px;
+		width: 60px;
+		margin-left: 40px;
+	}
+
+	li.css3aw-searchbox input[type="search"]:focus {
+		width: 150px;
+	}
+
+	header.css3aw-navigation-container li a:link, header.css3aw-navigation-container li a:visited {
+		-webkit-transition: color .25s ease-in-out;
+		-moz-transition: color .25s ease-in-out;
+		-o-transition: color .25s ease-in-out;
+		-ms-transition: color .25s ease-in-out;
+		transition: color .25s ease-in-out;
+	}
+
+	header.css3aw-navigation-container span.css3aw-menu-dash {
+		-webkit-transition: background .25s ease-in-out;
+		-moz-transition: background .25s ease-in-out;
+		-o-transition: background .25s ease-in-out;
+		-ms-transition: background .25s ease-in-out;
+		transition: background .25s ease-in-out;
+	}
+
+}
+
+
+/*********************************************************************************************************
+
+			Correction To FontAwesome
+
+*********************************************************************************************************/
+.css3aw-navigation-container ul.css3aw-sub-menu span[class^="icon-"] {
+	margin-right: 25px;
+	margin-left: 7px;
+	font-size: 110%;
+	opacity: 0.9;
+}
+
+span[class^="icon-"] {
+	margin-right: 5px;
+	margin-left: 5px;
+	font-size: 110%;
+}
+
+.css3aw-navigation-container .css3aw-rightbar li a span[class^="icon-"] {
+	margin-right: 8px;
+}
+
+/*********************************************************************************************************
+
+			Themes - Light Theme
+
+*********************************************************************************************************/
+
+.css3aw-navigation-container.light-theme {
+	/* fallback */
+	background-color: #eee;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#eee));
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #fff, #eee);
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #fff, #eee);
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #fff, #eee);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #fff, #eee);
+	border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+header.css3aw-navigation-container.light-theme li a:link, header.css3aw-navigation-container.light-theme li a:visited {
+	text-decoration: none;
+	color: #3a3a3a;
+}
+
+header.css3aw-navigation-container.light-theme li.css3aw-searchbox {
+	background: url('../images/search-icon-dark.png') 10px center no-repeat;
+	background-size: 24px 24px;
+}
+
+header.light-theme span.css3aw-menu-dash {background: #3a3a3a;}
+
+header.light-theme div.css3aw-menu-container {
+	border-right: 1px solid rgba(0,0,0,0.15);
+}
+
+header.light-theme ul.css3aw-sub-menu > li {
+	background: #eee;
+	border-top: 1px solid rgba(0,0,0,0.15);
+}
+
+header.light-theme .css3aw-rightbar ul li:not(.css3aw-stick-to-right) {
+	border-right: 1px solid rgba(0,0,0,0.15) ;
+}
+
+header.light-theme .css3aw-rightbar ul li.css3aw-social {
+	background: url('../images/light.png') left top no-repeat;
+}
+
+header.light-theme .css3aw-rightbar ul li.css3aw-stick-to-right {
+	border-left: 1px solid rgba(0,0,0,0.15);
+	border-right: 0;
+	margin-right: 0;
+	float: right;
+}
+
+header.light-theme .css3aw-rightbar li.css3aw-social ul li {
+	background: #eee;
+	border-right: 0 !important;
+}
+
+header.light-theme .css3aw-rightbar li.css3aw-social ul li {
+	border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+header.light-theme input#css3aw-menu-icon:checked ~ ul > li li {
+	border-top-color:  rgba(0,0,0,0.15);
+}
+
+header.light-theme ul.css3aw-sub-menu > li:hover ul li {
+	border-top-color: rgba(0,0,0,0.15);
+}
+
+@media (min-width: 767px) {
+	header.light-theme .css3aw-rightbar ul li.css3aw-social {
+		background: url('../images/light_60.png') left top no-repeat;
+	}
+
+	header.css3aw-navigation-container.light-theme li.css3aw-searchbox {
+		background: url('../images/search-icon-dark.png') 15px center no-repeat;
+		background-size: 28px 28px;
+	}
+
+	header.light-theme .css3aw-rightbar li.css3aw-social ul li {
+		background: transparent;
+		border-right: 0 !important;
+		border-bottom: 0;
+	}
+}
+
+
+header.light-theme li.css3aw-searchbox input[type="search"]::-webkit-input-placeholder { color: rgba(58,58,58,0.8); }
+header.light-theme li.css3aw-searchbox input[type="search"]::-moz-placeholder { color: rgba(58,58,58,0.8); } /* firefox 19+ */
+header.light-theme li.css3aw-searchbox input[type="search"]:-ms-input-placeholder { color: rgba(58,58,58,0.8); } /* ie */
+header.light-theme li.css3aw-searchbox input[type="search"]:-moz-placeholder { color: rgba(58,58,58,0.8); }
+
+
+/*********************************************************************************************************
+
+			Themes - Dark Theme
+
+*********************************************************************************************************/
+
+.css3aw-navigation-container.dark-theme {
+	/* fallback */
+	background-color: #222;
+	color: #eee;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#444), to(#222));
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #444, #222);
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #444, #222);
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #444, #222);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #444, #222);
+	border-bottom: 1px solid rgba(0,0,0,0.65);
+	z-index: 2
+}
+
+header.css3aw-navigation-container.dark-theme li a:link, header.css3aw-navigation-container.dark-theme li a:visited {
+	text-decoration: none;
+	color: #eee;
+}
+
+header.dark-theme div.css3aw-menu-container {
+	border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+header.css3aw-navigation-container.dark-theme li.css3aw-searchbox {
+	background: url('../images/search-icon-light.png') 10px center no-repeat;
+	background-size: 24px 24px;
+}
+
+header.dark-theme span.css3aw-menu-dash {background: #eee;}
+
+header.dark-theme ul.css3aw-sub-menu > li {
+	background: #222;
+	border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+header.dark-theme ul.css3aw-sub-menu > li:hover ul li {
+	border-top-color: rgba(255,255,255,0.1);
+}
+
+header.dark-theme .css3aw-rightbar ul li:not(.css3aw-stick-to-right) {
+	border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+header.dark-theme .css3aw-rightbar ul li.css3aw-social {
+	background: url('../images/dark.png') left top no-repeat;
+}
+
+header.dark-theme .css3aw-rightbar ul li.css3aw-stick-to-right {
+	border-left: 1px solid rgba(255,255,255,0.1);
+	border-right: 0;
+	margin-right: 0;
+	float: right;
+}
+
+header.dark-theme .css3aw-rightbar li.css3aw-social ul {margin-top: -1px;}
+
+header.dark-theme .css3aw-rightbar li.css3aw-social ul li {
+	background: #222;
+	border-right: 0 !important;
+}
+
+header.dark-theme .css3aw-rightbar li.css3aw-social ul li {
+	border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+header.dark-theme input#css3aw-menu-icon:checked ~ ul > li li {
+	border-top-color:  rgba(255,255,255,0.1);
+}
+
+@media (min-width: 767px) {
+	header.dark-theme .css3aw-rightbar ul li.css3aw-social {
+		background: url('../images/dark_60.png') left top no-repeat;
+	}
+
+	header.css3aw-navigation-container.dark-theme li.css3aw-searchbox {
+		background: url('../images/search-icon-light.png') 15px center no-repeat;
+		background-size: 28px 28px;
+	}
+
+	header.dark-theme .css3aw-rightbar li.css3aw-social ul li {
+		background: transparent;
+		border-right: 0 !important;
+		border-bottom: 0;
+	}
+}
+
+header.dark-theme li.css3aw-searchbox input[type="search"]::-webkit-input-placeholder { color: rgba(238,238,238,0.8); }
+header.dark-theme li.css3aw-searchbox input[type="search"]::-moz-placeholder { color: rgba(238,238,238,0.8); } /* firefox 19+ */
+header.dark-theme li.css3aw-searchbox input[type="search"]:-ms-input-placeholder { color: rgba(238,238,238,0.8); } /* ie */
+header.dark-theme li.css3aw-searchbox input[type="search"]:-moz-placeholder { color: rgba(238,238,238,0.8); }
+
+
+
+/*********************************************************************************************************
+
+			Hover Colors
+
+*********************************************************************************************************/
+
+header.css3aw-navigation-container .css3aw-sub-menu li:not(.css3aw-searchbox):hover > a,
+header.css3aw-navigation-container .css3aw-rightbar li a:hover,
+li.css3aw-social > a:hover,
+input[id="css3aw-social-icon"]:checked ~ label > span {
+	color: #449d44;		/* Change this value to get your favourite color when hovering :) */
+}
+
+input[id="css3aw-menu-icon"] + label:hover > span.css3aw-menu-dash,
+input[id="css3aw-menu-icon"]:checked ~ label > span.css3aw-menu-dash {
+	background: #449d44;		/* Change this value to get your favourite color when hovering :) */
+}
+
+header.css3aw-navigation-container li > a:active {
+	color: #449d44;		/* Change this value to get your favourite color when hovering :) */
+}

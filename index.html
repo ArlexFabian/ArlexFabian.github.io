@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Biosainchi S.A.S</title>
+    <meta name="description" content="Empresa productora de Sacha Inchi en el tolima." />
+    <meta name="keywords" content="free html template, bootstrap, ui kit, sass" />
+    <meta name="author" content="Peter Finlan and Taty Grassini Codrops" />
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#663fb5">
+    <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#663fb5">
+    <link rel="stylesheet" href="css/landio.css">
+    
+     
+    <!------------------Menu-------------------------> 
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/general_foundicons_ie7.css">
+  <![endif]-->
+	
+	<!-- Importing Stylesheets -->
+    <!----------------Menu--------------->
+    <link rel='stylesheet' href='stylesheets/css3aw.css' type='text/css' media='screen'>
+    <link rel='stylesheet' href='stylesheets/font_awesome.css' type='text/css' media='all'>
+   
+	<!------------------Fin Menu------------------------->
+    
+    <!-------------------------PATROSINADORES---------------->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+        <meta name="keywords" content="carousel, jquery, responsive, fluid, elastic, resize, thumbnail, slider" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<script src="js/modernizr.custom.17475.js"></script>
+        <!-------------------FIN PATROSINADORES----------------> 
+	<!------------------------ windows---------------->
+    <link id="jquery_ui_theme_loader" type="text/css" href="jswindows/jquery/themes/black-tie/jquery-ui.css" rel="stylesheet" />
+		<link type="text/css" href="jswindows/jquery/window/css/jquery.window.css" rel="stylesheet" />
+	  
+    <!------------------------ windows----------------->
+	   
+           
+  </head>
+
+  <body>
+
+    <!-- Menu 
+    ================================================== -->
+	<header class="css3aw-navigation-container dark-theme">
+
+		<div class="css3aw-menu-container">
+			<input type="checkbox" id="css3aw-menu-icon">
+			<label for="css3aw-menu-icon">
+				<span class="css3aw-menu-dash"></span>
+				<span class="css3aw-menu-dash"></span>
+				<span class="css3aw-menu-dash"></span>
+			</label>
+			
+			<ul class="css3aw-sub-menu">
+				<li><a href="#"><span aria-hidden="true" class="icon-briefcase"></span>Inicio</a>
+                </li>
+				<li><a href="#" onclick="createWindowgal();"><span aria-hidden="true" class="icon-th"></span>Galeria</a>
+                </li>
+				<li><a href="#"><span aria-hidden="true" class="icon-info-sign"></span>Compa&ntilde;ia</a>
+					<ul>
+						<li><a href="#" onclick="createWindowmi();" ><span aria-hidden="true" class="icon-user"></span>Misi&oacute;n</a></li>
+						<li><a href="#" onclick="createWindowvi();" ><span aria-hidden="true" class="icon-list-ul"></span>Visi&oacute;n</a></li>
+						<li><a href="#" onclick="createWindowraz();" ><span aria-hidden="true" class="icon-glass"></span>Razon social</a></li>
+					</ul>
+				</li>
+				<li><a href="#" onclick="createWindowN();"><span aria-hidden="true" class="icon-download"></span>Noticias</a></li>
+				<li><a href="http://biosainchi.twomini.com/articulos/articulos.html"><span aria-hidden="true" class="icon-eye-open"></span>Documentaci&oacute;n</a></li>
+				<li><a href="#" onclick="createWindowpro();"><span aria-hidden="true" class="icon-question-sign "></span>Productos</a></li>
+				<li><a href="#" onclick="createWindowCom();"><span aria-hidden="true" class="icon-list-alt"></span>Comentarios</a></li>
+				<li><a href="#" onclick="createWindow();" ><span aria-hidden="true" class="icon-comments"></span>Video Formativo</a></li>
+				<li><a href="#" onclick="createWindowubi();"> <span aria-hidden="true" class="icon-folder-open"></span> Ubicacion</a>
+                         
+                </li>
+				<li><a href="#"><span aria-hidden="true" class="icon-phone"></span>Contact</a></li>
+			</ul>
+
+		</div>
+
+		<div class="css3aw-rightbar">
+			<ul>
+			
+				<li><a href="index.html">BIOSAINCHI S.A.S </a></li>
+				<li class="css3aw-stick-to-right css3aw-social">
+		        <input type="checkbox" id="css3aw-social-icon">
+					<label for="css3aw-social-icon">
+						<span aria-hidden="true" class="icon-share"></span>
+					</label>
+					<ul>
+						<li><a href="https://www.facebook.com/Biosainchi/"><span aria-hidden="true" class="icon-facebook"></span></a></li>
+						<li><a href="https://twitter.com/Biosainchi"><span aria-hidden="true" class="icon-twitter"></span></a></li>
+						<li><a href="#"><span aria-hidden="true" class="icon-google-plus"></span></a></li>
+						<li><a href="#"><span aria-hidden="true" class="icon-youtube"></span></a></li>
+						<li><a href="#"><span aria-hidden="true" class="icon-dribbble"></span></a></li>
+					</ul>
+				</li>
+                
+
+				<li class="css3aw-searchbox css3aw-stick-to-right">                 
+                </li>
+
+			</ul>
+		</div>
+		<marquee bgcolor="#0A770A" width="100%" scrolldelay="100" scrollamount="5" direction="left" loop="infinite"  onmouseover="this.stop()"onmouseout="this.start()">Biosainchi s.a.s, Liderazgo con proyecci&oacute;n agricola en el pais. &#9993;  <a href=""><font color="white">Segunda monitoria por parte del sena &#9993; </a> <a href=""><font color="white">Informe avances BIOSAINCHI S.A.S/</a></font>                                
+</marquee> 
+
+
+
+
+
+  </header>     
+    </div>
+ 
+      <br>
+    <br>
+   
+    <!-- Menu
+    ================================================== -->
+    
+    <header id="landioCarousel" class="carousel carousel-header slide bg-inverse" data-ride="carousel" data-interval="0" role="banner">
+      <ol class="carousel-indicators">
+        <li data-target="#landioCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#landioCarousel" data-slide-to="1"></li>
+        <li data-target="#landioCarousel" data-slide-to="2"></li>
+      </ol>
+         <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active" style="background-image: url(img/bg-header.jpg);">
+          <div class="carousel-caption">
+           <img src="images/logoinicio.png" 
+         height="360" width="720" style="top:auto">
+            <h1 class="m-b-3 hidden-sm-down"><em>Liderazgo </em> con proyecci&oacute;n agricola en el pais.<a href="index.html" class="jumbolink"></a> </h1>
+            <a class="btn btn-secondary-outline m-b-2" href="http://tympanus.net/codrops/?p=25217" role="button"><span class="icon-sketch"></span>Ver mas</a>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url(img/bg-header-3.jpg);">
+          <div class="carousel-caption">
+            <h1 class="display-3">SACHICULTORES</h1>
+            <h2 class="m-b-3 hidden-sm-down"> Una nueva <strong>apuesta al futuro Biosainchi S.A.S</strong> </h2>
+            <a class="btn btn-secondary-outline m-b-2" href="http://tympanus.net/codrops/?p=25217" role="button"><span class="icon-sketch"></span>Ver mas</a>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url(img/bg-header-2.jpg);">
+          <div class="carousel-caption">
+            <h1 class="display-3">AVANCES DEL PROYECTO</h1>
+            <h2 class="m-b-3 hidden-sm-down">Un proyecto de innovacion agricola</em> y <a href="ui-elements.html" class="jumbolink">emprendimiento regional</a>.</h2>
+            <a class="btn btn-secondary-outline m-b-2" href="http://tympanus.net/codrops/?p=25217" role="button"><span class="icon-sketch"></span>Ver mas</a>
+          </div>
+        </div>
+        <ul class="nav nav-inline social-share">
+          <li class="nav-item"><a class="nav-link" href="#"><span class="icon-twitter"></span> 0</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/Biosainchi/"><span class="icon-facebook"></span> 91</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><span class="icon-linkedin"></span> 0</a></li>
+        </ul>
+      </div>
+    </header>
+       <!-- Intro
+    ================================================== -->
+
+    <section class="section-intro bg-faded text-xs-center">
+      <div class="container">
+        <h3 class="wp wp-1">El esfuerzo y la mejor dedicaci&oacute;n</h3>
+        <p class="lead wp wp-2">han impulsado la motivaci&oacute;n y el desarrollo de nuestra empresa, BIOSAINCHI S.A.S .</p>
+        <img src="img/mock.png" alt="iPad mock" class="img-fluid wp wp-3">
+      </div>
+    </section>
+
+    <!-- Features
+    ================================================== -->
+
+    <!-- Videos
+    ================================================== -->
+<br>
+  <center> <h3> VIDEO </h3> </center>
+  <br>
+    <section class="section-video bg-inverse text-xs-center wp wp-4">
+      <h3 class="sr-only">Video</h3>
+      <video id="demo_video" class="video-js vjs-default-skin vjs-big-play-centered" controls poster="img/video-poster.jpg" data-setup='{}'>
+        <source src="http://vjs.zencdn.net/v/oceans.mp4" type='video/mp4'>
+        <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm'>
+      </video>
+    </section>
+
+    <!-- Text Content
+    ================================================== -->
+
+    <section class="section-text">
+      <div class="container">
+        <h3 class="text-xs-center">PROP&Oacute;CITOS</h3>
+        <div class="row p-y-3">
+          <div class="col-md-5">
+            <p class="wp wp-7">A poere doec senctus suspendisse bibendum magna ridlus a justo orci parient suspendisse ad rhoncus cursus ut arturient ivera elit auam ulices est sem. Tellus nam ad ermntum ac enim est duis facilisis congue a lacus adiscing conseuat rsus contetur scelisque ieger suendisse a mus integer elit massa ut.</p>
+          </div>
+          <div class="col-md-5 col-md-offset-2 separator-x">
+            <p class="wp wp-8">A posuere doec enectus spendisse bibendum magna ridiculus a justo orci parent suspendisse ad honcus crsus ut partuient vivrra elit aliquam ultrices est em. ellus am ad fermentum ac enim est duis facsis congue a lacus aipiscing cnsequat rsus consectetur scelerisque ineger suspendisse a mus nteger eit assa t.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News
+    ================================================== -->
+
+    <section class="section-news">
+      <div class="container">
+         <h3 class="text-xs-center">ULTIMAS NOTICIAS</h3>
+         <br>
+        <div class="bg-inverse">
+          <div class="row">
+            <div class="col-md-6 p-r-0">
+              <figure class="has-light-mask m-b-0 image-effect">
+                <img src="img/imagenes Articulos/articulosena.jpg?q=80&fm=jpg&w=1080&fit=max" alt="Article thumbnail" class="img-fluid">
+              </figure>
+            </div>
+            <div class="col-md-6 p-l-0">
+              <article class="center-block">
+                <span class="label label-info">Ultimo Articulo</span>
+                <br>
+                <h5><a href="#">Segunda monitoria por parte del sena<span class="icon-arrow-right"></span></a></h5>
+                <p class="m-b-0">
+                  <a href="#"><span class="label label-default text-uppercase"><span class="icon-tag"></span> + News</span></a>
+                  <a href="#"><span class="label label-default text-uppercase"><span class="icon-time"></span> 18/12/2015</span></a>
+                </p>
+              </article>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-md-push-6 p-l-0">
+              <figure class="has-light-mask m-b-0 image-effect">
+                <img src="img/imagenes Articulos/Articulo18.jpg?q=80&fm=jpg&w=1080&fit=max" alt="Article thumbnail" class="img-fluid">
+              </figure>
+            </div>
+            <div class="col-md-6 col-md-pull-6 p-r-0">
+              <article class="center-block">
+                <span class="label label-info">Articulo</span>
+                <br>
+                <h5><a href="#">Informe avances BIOSAINCHI S.A.S <span class="icon-arrow-right"></span></a></h5>
+                <p class="m-b-0">
+                  <a href="#"><span class="label label-default text-uppercase"><span class="icon-tag"></span> +News</span></a>
+                  <a href="#"><span class="label label-default text-uppercase"><span class="icon-time"></span>18/12/2015</span></a>
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PATROSINADORES
+    ================================================== -->
+<section>
+<h3 class="text-xs-center">PATROSINADORES</h3>
+<br>
+           
+   <div class="container demo-3">
+			<!-- top bar --><!--/  top bar -->
+
+            <div class="main">
+
+				<div class="fixed-bar">
+					<!-- Elastislide Carousel -->
+					<ul id="carousel" class="elastislide-list">
+						<li><a href="#"><img src="images/small/1.jpg" alt="image01" /></a></li>
+						<li><a href="#"><img src="images/small/2.jpg" alt="image02" /></a></li>
+						<li><a href="#"><img src="images/small/3.jpg" alt="image03" /></a></li>
+						<li><a href="#"><img src="images/small/4.jpg" alt="image04" /></a></li>
+						<li><a href="#"><img src="images/small/5.jpg" alt="image05" /></a></li>
+						<li><a href="#"><img src="images/small/6.jpg" alt="image06" /></a></li>
+						
+					</ul>
+				</div>	
+		  </div>
+      </div>
+		<!-- End PATROSINADORES -->
+</section>
+
+<!-----------------Article Mision -------------------->
+<div id="window_block1" style="display:none;">
+      <img style="border:0; height:100%; width:100%" src="images/Mision.jpg">
+      </div>
+<!------------------End Article Mision ------------------->
+<!-----------------Article vision -------------------->
+<div id="window_block2" style="display:none;">
+      <img style="border:0; height:100%; width:100%" src="images/vision.jpg">
+      </div>
+ 
+<!------------------End Article Vision ------------------->
+<!------------------Article Razon social--------------------->
+<div id="window_blockraz" style="display:none;">
+   <div style="padding:10px;">
+      <div style="font-size:24px; font-weight:bold; margin-bottom:10px; color:#222222;"> <center> Razón Social </center></div>
+      <div>
+         If ydfou wdft to achieve Javdfdript's full pofddftial, it is crifdfical to undfstand its naggtfre, higgry, afdnd ldftations. 
+         Thdfis bodfdk sedfts the stage by covging Javfipt frdfm its very beginning to the present-day incfdons that include 
+         sudfrt for the DOdfM adnd Adfgx. It also shows you how to extend this podfful landfage to meet spfdffic needs and create
+         seamless cldft-sedfer commfdtion without interdfries such as Jag or hidden frdfdfames.
+      </div>
+   </div>
+</div>
+<!------------------End Article Razon social----------------->
+<!------------------Article Ubicacion--------------------->
+
+<div id="window_blockubi" style="display:none;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d508977.779921253!2d-75.34622640702283!3d4.702312687220587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e47567aa1d9babb%3A0xd233da07f03ec1ea!2zTMOtYmFubywgVG9saW1h!5e0!3m2!1ses-419!2sco!4v1451170412061" width="100%" height="99%" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<!----------------End Article Ubicacion ---------------->
+<!---------------- Article Productos---------------->
+<div id="window_blockpro" style="display:none;">
+      <img style="border:0; width:100%" src="images/productos.jpg"> <br>
+     <div style=" margin-left: 8em;  margin-right: 8em; text-align : justify;">
+        Actualmente somos una empresa que prodece Sacha Inchi para su posterior comercialización.
+ The economy of La Paz has improved greatly in recent years, mainly as a result of improved political stability. Due to the long period of high inflation and economic struggle faced by Bolivians in the 1980s and early 1990s, a large informal economy developed. EviARLEXdence of this is provided by the markets found all around the city. While there are stable markets, almost every street in the downtown area and surrounding neighborhoods has at least one vendor on it. La Paz remains the princARLEXipal center of manufacturing enterprises that produce finished-product goods for the country, with about two-thirds of Bolivia's manufacturing located nearby. Historically, industry in Bolivia has been dominated by mineral processing and the preparation of agricultural products. However, in the urban centre of La Paz, small plants carry out a large portion of the industry. Food, tobacco products, clothing, various consumer goods, building materials, and agricultural tools are produced. "The tin quotations from London are watched in La Paz with close interest as an index of the couARLEXntry's prosperity; a third of the national revenue and more than half of the total customs in 1925 were derived from tin; in  
+EviARLEXdence of this is provided by the markets found all around the city. While there are stable markets, almost every street in the downtown area and surrounding neighborhoods has at least one vendor on it. La Paz remains the princARLEXipal center of manufacturing enterprises that produce finished-product goods for the country, with about two-thirds of Bolivia's manufacturing 
+          <br>
+         </div>
+      </div>
+   </div>
+<!----------------End Article Productos ---------------->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d508977.779921253!2d-75.34622640702283!3d4.702312687220587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e47567aa1d9babb%3A0xd233da07f03ec1ea!2zTMOtYmFubywgVG9saW1h!5e0!3m2!1ses-419!2sco!4v1451170412061" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        
+    <!-- Footer
+    ================================================== -->
+
+    <footer class="section-footer bg-inverse" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-5">
+            <div class="media">
+              <div class="media-left">
+              <img src="images/logo.png" height="98" width="97">
+              </div>
+              <small class="media-body media-bottom">
+                &copy; Biosainchi s.a.s 2015 <br>
+                    Libano - Tolima. 
+                </small>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-7">
+            <ul class="nav nav-inline">
+              <li class="nav-item active">
+                <a class="nav-link" href="./index-carousel.html"><small>Menu</small><span class="sr-only"></span></a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="ui-elements.html">Compa&ntilde;ia</a></li>
+              <li class="nav-item">Contacto</li>
+              <li class="nav-item">Inicio <a class="nav-link scroll-top" href="#totop"> <span class="icon-caret-up"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/landio.min.js"></script>
+    
+    
+    <!---------------------PAROSINADORES----------------->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquerypp.custom.js"></script>
+		<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+		<script type="text/javascript">
+			
+			$( '#carousel' ).elastislide( {
+				minItems : 2
+			} );
+			
+		</script>
+   <!------------------------END PATROSINADORES--------------->
+  <!------------------------Movil web--------------->
+  <script>
+  var device = navigator.userAgent
+
+if (device.match(/Iphone/i)|| device.match(/Ipod/i)|| device.match(/Android/i)|| device.match(/J2ME/i)|| device.match(/BlackBerry/i)|| device.match(/iPhone|iPad|iPod/i)|| device.match(/Opera Mini/i)|| device.match(/IEMobile/i)|| device.match(/Mobile/i)|| device.match(/Windows Phone/i)|| device.match(/windows mobile/i)|| device.match(/windows ce/i)|| device.match(/webOS/i)|| device.match(/palm/i)|| device.match(/bada/i)|| device.match(/series60/i)|| device.match(/nokia/i)|| device.match(/symbian/i)|| device.match(/HTC/i))
+ { 
+window.location = "http://www.miwebmovil.com/";
+
+}
+else
+{
+
+}
+</script> 
+<!------------------------end movil------------------------>
+
+<!-------------------------windows video------------------------>
+<!-- jQuery Library -->
+	<script type="text/javascript" src="jswindows/jquery/jquery.js"></script>
+	<script type="text/javascript" src="jswindows/jquery/jquery-ui.js"></script>
+	<script type="text/javascript" src="jswindows/jquery/window/jquery.window.js"></script>
+	<script type="text/javascript">
+		function createWindow() {
+			$.window({
+				footerContent: "Biosainchi s.a.s",
+				icon: "http://www.google.com/favicon.ico",
+				title: "Video Formativo",
+                url:"https://www.youtube.com/embed/nbz6KSRHb9Q"
+			});
+		}
+	</script>
+    
+<!------------------------end windows video-------------------->
+<!-------------------------windows Galeria-------------------->
+<script type="text/javascript">
+		function createWindowgal() {
+			$.window({
+				footerContent: "Biosainchi s.a.s",
+				icon: "http://www.google.com/favicon.ico",
+				title: "Galeria",
+                url:"/gallery/index.html"
+			});
+		}
+	</script>
+<!------------------------end windows Galeria----------------->
+<!-------------------------windows Noticias-------------------->
+<script type="text/javascript">
+		function createWindowN() {
+			$.window({
+				footerContent: "Biosainchi s.a.s",
+				icon: "http://www.google.com/favicon.ico",
+				title: "Noticias",
+                url:"http://biosainchi.netau.net/articulos/index.html"
+			});
+		}
+	</script>
+<!------------------------end windows Noticias----------------->
+<!-------------------------windows Comentarios------------------>
+<script type="text/javascript">
+		function createWindowpro() {
+			$.window({
+				footerContent: "Biosainchi s.a.s",
+				icon: "http://www.google.com/favicon.ico",
+				title: "Productos",
+				content: $("#window_blockpro").html(),
+			    footerContent: "Biosainchi s.a.s" 
+                			
+			});
+		}
+	</script>
+<!------------------------end windows Comentarios--------------->
+<!-------------------------windows Mision------------------>
+<script type="text/javascript">
+		function createWindowmi() {
+			$.window({			
+				icon: "http://www.google.com/favicon.ico",
+				title: "Misión",
+                content: $("#window_block1").html(),
+			    footerContent: "Biosainchi s.a.s"    
+			});
+		}
+	</script>
+</script>
+<!-------------------------end windows Mision------------------>
+<!-------------------------windows Vision------------------>
+<script type="text/javascript">
+		function createWindowvi() {
+			$.window({		
+				icon: "http://www.google.com/favicon.ico",
+				title: "Visión",
+                content: $("#window_block2").html(),
+			    footerContent: "Biosainchi s.a.s"    
+			});
+		}
+	</script>
+</script>
+<!-------------------------end windows Vision------------------>
+<!-------------------------windows ubicacion------------------>
+<script type="text/javascript">
+		function createWindowubi() {
+			$.window({
+				icon: "http://www.google.com/favicon.ico",
+				title: "Ubicación",
+                content: $("#window_blockubi").html(),
+			    footerContent: "Biosainchi s.a.s "    
+			});
+		}
+	</script>
+</script>
+<!-------------------------End windows ubicacion------------->
+<!-------------------------windows ubicacion------------------>
+<script type="text/javascript">
+		function createWindowraz() {
+			$.window({
+				icon: "http://www.google.com/favicon.ico",
+				title: "Razón Social",
+                content: $("#window_blockraz").html(),
+			    footerContent: "Biosainchi s.a.s"    
+			});
+		}
+	</script>
+</script>
+<!-------------------------End windows ubicacion------------->
+
+</body>
+</html>
